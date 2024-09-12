@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root {
+    --primary: #DD946F ;
+    --primary-hover: #CD7D7C;                
+    --secondary: #EFD0F8;
+    --secondary-hover: #B8A1D9;
+    --aura: #9265CA80;
+    --background: #261E5A;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background);
+    font-family: Mulish;
+}
+
+h1 {
+    color: var(--secondary);
+}
+
+.background {
+    content: "";
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-image: url(assets/universe.jpg);
+    opacity: 0.5;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 1rem;
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    border-radius: 1rem;
+    box-shadow: 0 20px 60px var(--aura);
+    min-width: 17.5rem;
+    max-width: 28.75rem;
+    width: 100%;
+    padding: 2rem;
+}
+
+.login-welcome {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.login-welcome-row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.my-form__button {
+    background-color: var(--primary);
+    color: var(--background);
+    white-space: nowrap;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    line-height: 3.125rem;
+    outline: none;
+    font-size: 1.125rem;
+    letter-spacing: .025em;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 800;
+    min-height: 3.125rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 10px rgba(0,0,0,.15);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+}
+
+.text-field input {
+    color: var(--secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid var(--secondary);
+    height: 3.125rem;
+    letter-spacing: .03rem;
+    background-color: transparent;
+    outline: none;
+    transition: .25s;
+    border-radius: 0.5rem;
+    text-indent: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+
+.my-form__button:hover {
+    background-color: var(--primary-hover);
+}
+
+.text-field {
+    position: relative;
+}
+
+.text-field input::-webkit-input-placeholder { /* Edge */
+    color: var(--secondary-hover);
+}
+
+.text-field img {
+    position: absolute;
+    right: -0.125rem;
+    bottom: -0.25rem;
+    width: 2rem;
+    height: 2rem;
+    transform: translate(-50%,-50%);
+    transform-origin: center;
+}
+
+.text-field input:focus {
+    border: 1px solid var(--primary);
+}
+
+.text-field label {
+    color: var(--secondary);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: .03rem;
+    z-index: 10;
+}
+
+.input-icon {
+    position: absolute;
+    bottom: 0;
+    top: 55%;
+    right: 0.5rem;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+}
+
+.my-form__actions {
+    display: flex;
+    flex-direction: column;
+    color: var(--secondary);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.my-form__actions a {
+    color: var(--secondary);
+    font-weight: 600;
+}
+
+.my-form__actions a:hover {
+    color: #a7a2cb;               
+}
+
+.my-form__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my-form__signup {
+    display: flex;
+    justify-content: center;
+}
+
+.my-form__signup a {
+    color: var(--primary);
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+.my-form__signup a:hover {
+    color: var(--primary-hover);
+}
